@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function pesan() {
+            alert('Welcome user... jangan lupa sholat dulu ya...')
+        }
+        
+    </script>
+    <button onclick="pesan()">pesan sholat</button>
+
+    <div style="display: flex;">
+        <button id="kurang" onclick="kurang()">Kurang</button>
+        <div id="demo" style="margin: 30px;"> </div>
+        <button id="tambah" onclick="tambah()">Tambah</button>
+       
+    </div>
+        <button id="demo2" style="margin: 30px;" onclick="cetak()">Cetak</button>
+        <p id="demo3" style="margin: 10px;"></d>
+
+
+
+
+    <!-- <script src="./index.js"></script> -->
+    <script>
+
+        let count = 0;
+        document.getElementById('demo').innerText = count;
+        document.getElementById('kurang').style.backgroundColor= 'red'
+        document.getElementById('tambah').style.backgroundColor= 'green'
+
+        // const tambah = () => { count = count + 1 }
+            // document.getElementById('demo').innerText = count;
+        
+
+        function tambah() {
+            count = count + 1;
+            document.getElementById('demo').innerText = count;
+           
+        }
+        
+        function kurang() {
+            count = count - 1;
+            document.getElementById('demo').innerText = count;
+        }
+
+        function cetak() {
+            let x = document.getElementById('demo3');
+            x.append("Cetak") 
+        }
+     
+      
+    </script>
+</body>
+</html>
